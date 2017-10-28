@@ -3,25 +3,25 @@
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	background: #262626;
 	font-family: verdana;
+	margin: 0;
+	padding: 0;
 }
 .box {
-	position: absolute;
-	width: 40px;
-	height: 40px;
 	background: #fff;
-	padding: 20px;
-	transition: 1s;
-	overflow: hidden;
-	top: calc(50% - 210px);
+	height: 40px;
 	left: calc(50% - 150px);
+	padding: 20px;
+	position: absolute;
+	transition: 1s;
+	top: calc(50% - 210px);
+	overflow: hidden;
+	width: 40px;
 }
 .box.active {
-	width: 300px;
 	height: 420px;
+	width: 300px;
 }
 .box.active p {
 	transition-delay: 1s;
@@ -29,68 +29,44 @@ body {
 }
 .box p {
 	font-size: 14px;
+	margin-top: 70px;
 	text-align: justify;
-	margin-top: 25px;
 	visibility: hidden;
 }
 .toggle {
+	background: #2e80ff;
+	height: 40px;
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 40px;
-	height: 40px;
-	background: #2e80ff;
 	transition: 1s;
+	width: 40px;
 }
 .toggle span {
-	display: block;
-	width: 20px;
-	height: 2px;
 	background: #fff;
-	position: absolute;
-	top: 19px;
+	display: block;
+	height: 2px;
 	left: 10px;
+	position: absolute;
 	transition: 1s;
+	top: 19px;
+	width: 20px;
 }
 .toggle span:before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	transform: rotate(90deg);
 	background: #fff;
+	content: '';
+	height: 100%;
+	position: absolute;
+	transform: rotate(90deg);
+	width: 100%;
 }
 .toggle.active {
 	background: #ff3131;
-	top: 0;
-	left: calc(100% - 40px);
 	border-radius: 50%;
+	left: calc(100% - 40px);
 	transform: scale( .6);
+	top: 0;
 }
 .toggle.active span {
 	transform: rotate(225deg );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
